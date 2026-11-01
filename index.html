@@ -3,28 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#7b2036">
-<meta name="description" content="You are cordially invited to celebrate the wedding of Sunil and Priya.">
-<title>Sunil ♥ Priya | Wedding Invitation</title>
+<meta name="theme-color" content="#57182e">
+
+<title>सुनील ♥ प्रिया | Wedding Invitation</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
   --wine: #79263b;
-  --deep-wine: #4d1427;
-  --gold: #c6a15b;
-  --cream: #fff9ef;
-  --text: #4a2930;
-  --white: #ffffff;
+  --deep: #401020;
+  --gold: #e8cc91;
+  --cream: #fff8ee;
+  --text: #57353d;
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -33,8 +33,8 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--cream);
   color: var(--text);
+  background: var(--cream);
   overflow-x: hidden;
 }
 
@@ -47,153 +47,123 @@ button {
   cursor: pointer;
 }
 
+/* HINDI TEXT */
+
+.hindi {
+  font-family: 'Noto Serif Devanagari', serif;
+  line-height: 1.8;
+}
+
+/* COVER */
+
 .hero {
   min-height: 100svh;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 18px;
+  padding: 28px 20px;
   text-align: center;
   color: white;
-  overflow: hidden;
   background:
-    radial-gradient(ellipse at top, rgba(198,161,91,.18), transparent 55%),
-    linear-gradient(145deg, #421020, #842b43 55%, #4b1527);
+    radial-gradient(ellipse at top, rgba(232,204,145,.22), transparent 55%),
+    linear-gradient(145deg, #35101f, #842b43 55%, #451326);
 }
 
-.hero::before,
-.hero::after {
-  content: "";
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  border: 1px solid rgba(226,196,129,.55);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.hero::before {
-  top: -130px;
-  left: -100px;
-  box-shadow: 0 0 0 18px rgba(226,196,129,.05),
-              0 0 0 36px rgba(226,196,129,.05);
-}
-
-.hero::after {
-  bottom: -150px;
-  right: -100px;
-  box-shadow: 0 0 0 18px rgba(226,196,129,.05),
-              0 0 0 36px rgba(226,196,129,.05);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 650px;
+.hero-card {
   width: 100%;
-  padding: 40px 20px;
-  border: 1px solid rgba(226,196,129,.65);
-  outline: 1px solid rgba(226,196,129,.25);
-  outline-offset: 8px;
+  max-width: 600px;
+  padding: 38px 18px;
+  border: 1px solid var(--gold);
+  outline: 1px solid rgba(232,204,145,.4);
+  outline-offset: 7px;
+}
+
+.om {
+  font-size: 34px;
+  color: var(--gold);
+  margin-bottom: 15px;
 }
 
 .eyebrow {
-  font-size: 11px;
-  letter-spacing: 5px;
+  font-size: 10px;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  color: #e8cc91;
-  margin-bottom: 24px;
-}
-
-.om-symbol {
-  color: #e8cc91;
-  font-size: 32px;
-  margin-bottom: 12px;
+  color: var(--gold);
+  margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
-  font-size: clamp(48px, 10vw, 86px);
-  line-height: 1.05;
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: clamp(40px, 9vw, 68px);
+  line-height: 1.4;
+  font-weight: 600;
 }
 
-.ampersand {
-  color: #e8cc91;
+.amp {
+  color: var(--gold);
+  font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: .7em;
-  margin: 0 8px;
 }
 
 .hero-date {
-  margin-top: 22px;
-  font-size: 12px;
-  letter-spacing: 3px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-top: 15px;
   color: #f1dfbb;
 }
 
 .hero-message {
-  margin: 25px auto;
   font-family: 'Cormorant Garamond', serif;
   font-size: 23px;
   line-height: 1.5;
-  max-width: 430px;
+  margin: 24px 0;
 }
 
-.primary-btn,
-.outline-btn {
+.btn {
   display: inline-block;
+  border: 1px solid var(--gold);
+  background: #e8cc91;
+  color: #4b1829;
+  padding: 13px 22px;
   border-radius: 3px;
-  padding: 14px 25px;
+  text-decoration: none;
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  text-decoration: none;
-  transition: .25s ease;
+  transition: .25s;
 }
 
-.primary-btn {
-  border: 1px solid var(--gold);
-  color: var(--deep-wine);
-  background: #e4c784;
-}
-
-.primary-btn:hover {
-  background: #f2dfb3;
+.btn:hover {
   transform: translateY(-2px);
+  background: #f6e4b8;
 }
 
-.outline-btn {
-  color: var(--wine);
-  border: 1px solid var(--gold);
+.btn-outline {
   background: transparent;
+  color: var(--wine);
 }
 
-.outline-btn:hover {
+.btn-outline:hover {
   background: var(--wine);
   color: white;
 }
 
-.hero .primary-btn {
-  margin-top: 10px;
-}
+/* GENERAL SECTIONS */
 
 .section {
-  padding: 75px 20px;
+  padding: 70px 18px;
   text-align: center;
 }
 
-.section-inner {
+.inner {
   max-width: 850px;
   margin: auto;
 }
 
-.section-label {
-  color: var(--gold);
-  font-size: 11px;
-  font-weight: 600;
+.label {
+  color: #b28b4b;
+  font-size: 10px;
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -201,83 +171,74 @@ button {
 
 .section h2 {
   font-family: 'Cormorant Garamond', serif;
-  color: var(--wine);
-  font-size: clamp(36px, 7vw, 54px);
   font-weight: 500;
+  font-size: clamp(37px, 8vw, 54px);
+  color: var(--wine);
   line-height: 1.15;
 }
 
 .divider {
-  width: 90px;
+  width: 75px;
   height: 1px;
   background: var(--gold);
   margin: 22px auto;
-  position: relative;
 }
 
-.divider::after {
-  content: "◆";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--gold);
-  font-size: 10px;
-  background: var(--cream);
-  padding: 0 9px;
-}
-
-.intro-text {
-  max-width: 620px;
-  margin: 20px auto 0;
-  font-size: 14px;
+.intro {
+  max-width: 610px;
+  margin: 18px auto 0;
+  font-size: 13px;
   line-height: 2;
   color: #795b60;
 }
 
-.names-section {
-  background: #f6ebdc;
+/* COUPLE */
+
+.couple-section {
+  background: #f5e9da;
 }
 
 .couple {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 22px;
+  gap: 20px;
   margin: 35px 0 10px;
 }
 
-.person-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(34px, 7vw, 56px);
-  line-height: 1.1;
+.person {
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: clamp(30px, 7vw, 48px);
+  line-height: 1.6;
   color: var(--wine);
 }
 
-.person-caption {
+.person-label {
   font-size: 10px;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-top: 12px;
+  margin-top: 8px;
   color: #97747b;
+  text-transform: uppercase;
 }
 
-.couple-heart {
-  color: var(--gold);
-  font-size: 32px;
+.heart-icon {
+  color: #bd8d51;
+  font-size: 30px;
 }
 
-.detail-grid {
+/* WEDDING DETAILS */
+
+.details-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 38px;
+  gap: 14px;
+  margin-top: 35px;
 }
 
-.detail-card {
-  padding: 27px 12px;
+.detail {
+  padding: 25px 10px;
   border: 1px solid #e4d1b2;
-  background: rgba(255,255,255,.55);
+  background: rgba(255,255,255,.6);
 }
 
 .detail-icon {
@@ -285,115 +246,135 @@ button {
   margin-bottom: 12px;
 }
 
-.detail-card h3 {
+.detail h3 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 23px;
   color: var(--wine);
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
-.detail-card p {
-  font-size: 12px;
+.detail p {
+  font-size: 11px;
   line-height: 1.9;
   overflow-wrap: anywhere;
 }
 
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+/* COUNTDOWN */
+
 .countdown-section {
-  background: var(--deep-wine);
   color: white;
+  background: var(--deep);
 }
 
 .countdown-section h2 {
   color: white;
 }
 
-.countdown-section .section-label {
-  color: #e6c888;
-}
-
-.countdown-section .intro-text {
+.countdown-section .intro {
   color: #ead9d5;
 }
 
 .countdown {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  gap: 10px;
   max-width: 520px;
-  margin: 32px auto 0;
+  margin: 30px auto 0;
 }
 
 .count-box {
-  padding: 20px 6px;
-  border: 1px solid rgba(226,196,129,.5);
-  background: rgba(255,255,255,.04);
+  padding: 18px 5px;
+  border: 1px solid rgba(232,204,145,.5);
 }
 
 .count-number {
   display: block;
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(30px, 6vw, 46px);
-  color: #e8cc91;
+  font-size: clamp(28px, 6vw, 44px);
+  color: var(--gold);
 }
 
 .count-label {
   display: block;
   font-size: 9px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-top: 7px;
+  margin-top: 5px;
 }
 
-.surprise-section {
-  background: #f6ebdc;
-}
+/* HEART SCRATCH CARD */
 
-.scratch-wrap {
-  max-width: 420px;
-  margin: 30px auto 0;
-}
-
-.scratch-card {
-  position: relative;
-  width: 100%;
-  height: 190px;
-  border: 1px solid var(--gold);
-  background: white;
+.scratch-section {
+  background: radial-gradient(ellipse at center, #fffdf8, #f7e9dc);
   overflow: hidden;
-  touch-action: pan-y;
 }
 
-.scratch-message {
+.scratch-instruction {
+  max-width: 420px;
+  margin: 15px auto 0;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #795b60;
+}
+
+.heart-scratch-wrap {
+  width: min(310px, 88vw);
+  aspect-ratio: 1 / .92;
+  position: relative;
+  margin: 25px auto 0;
+  animation: heartFloat 3s ease-in-out infinite;
+}
+
+.scratch-underneath {
   position: absolute;
   inset: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 18px;
-  background: #fffaf1;
+  justify-content: center;
 }
 
-.scratch-message .small {
-  font-size: 10px;
-  letter-spacing: 3px;
-  color: #a27d42;
+.heart-shape {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.under-heart-content {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72%;
+  color: var(--wine);
+  pointer-events: none;
+}
+
+.under-heart-content .small-text {
+  font-size: 9px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-.scratch-message strong {
-  display: block;
-  margin-top: 12px;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 35px;
-  font-weight: 600;
-  color: var(--wine);
+.under-heart-content .heart-symbol {
+  font-size: 28px;
+  margin: 5px 0;
+  color: #bd8d51;
 }
 
-.scratch-message p {
-  margin-top: 7px;
-  font-size: 11px;
+.under-heart-content strong {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  line-height: 1.1;
 }
 
 #scratchCanvas {
@@ -401,68 +382,197 @@ button {
   inset: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
   touch-action: none;
-  cursor: crosshair;
+  cursor: grab;
 }
 
 .scratch-hint {
-  margin-top: 12px;
+  color: #986c71;
   font-size: 11px;
-  color: #8c6d70;
+  margin-top: 5px;
 }
 
-.venue-box {
-  border: 1px solid #e3cfad;
-  padding: 30px 18px;
-  margin-top: 30px;
-  background: rgba(255,255,255,.5);
+@keyframes heartFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(1deg);
+  }
 }
 
-.venue-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 32px;
-  color: var(--wine);
-  margin-bottom: 8px;
-}
+/* POPUP */
 
-.venue-address {
-  font-size: 13px;
-  line-height: 1.8;
-  color: #795b60;
-  margin-bottom: 22px;
-}
-
-.action-buttons {
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(39, 9, 23, .78);
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin-top: 25px;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s ease, visibility .4s ease;
+  backdrop-filter: blur(5px);
 }
+
+.popup-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-card {
+  position: relative;
+  width: min(420px, 100%);
+  padding: 35px 23px;
+  text-align: center;
+  border: 2px solid var(--gold);
+  outline: 1px solid rgba(232,204,145,.5);
+  outline-offset: 5px;
+  background: radial-gradient(ellipse at top, #fffdf7, #f7e6d6);
+  border-radius: 4px;
+  transform: translateY(35px) scale(.75);
+  opacity: 0;
+}
+
+.popup-overlay.show .popup-card {
+  animation: popupEnter .75s cubic-bezier(.18,.89,.32,1.28) forwards;
+}
+
+@keyframes popupEnter {
+  0% {
+    transform: translateY(35px) scale(.75);
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(-5px) scale(1.03);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.popup-flower {
+  font-size: 42px;
+  margin-bottom: 10px;
+  animation: flowerSpin 3s ease-in-out infinite;
+}
+
+@keyframes flowerSpin {
+  0%, 100% {
+    transform: rotate(-8deg) scale(1);
+  }
+  50% {
+    transform: rotate(8deg) scale(1.1);
+  }
+}
+
+.popup-card .label {
+  margin-bottom: 10px;
+}
+
+.popup-card h2 {
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: clamp(32px, 8vw, 43px);
+  line-height: 1.6;
+  color: var(--wine);
+  font-weight: 600;
+}
+
+.popup-names {
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: clamp(25px, 7vw, 34px);
+  line-height: 1.8;
+  color: #9a6b37;
+  margin-top: 12px;
+}
+
+.popup-message {
+  font-size: 12px;
+  line-height: 2;
+  color: #795b60;
+  margin: 15px 0 22px;
+}
+
+.close-popup {
+  border: none;
+  background: var(--wine);
+  color: white;
+  border-radius: 3px;
+  padding: 12px 24px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+/* FALLING FLOWERS */
+
+.flower-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.falling-flower {
+  position: absolute;
+  top: -55px;
+  user-select: none;
+  will-change: transform;
+  animation: flowerFall linear forwards;
+  filter: drop-shadow(0 2px 2px rgba(80,20,40,.12));
+}
+
+@keyframes flowerFall {
+  0% {
+    transform: translate3d(0, -50px, 0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(var(--drift), 50vh, 0) rotate(180deg);
+  }
+  100% {
+    transform: translate3d(calc(var(--drift) * -1), 110vh, 0) rotate(450deg);
+    opacity: .15;
+  }
+}
+
+/* FOOTER */
 
 .footer {
+  text-align: center;
+  padding: 40px 20px;
   background: #35101d;
   color: white;
-  padding: 45px 20px;
-  text-align: center;
 }
 
 .footer-names {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 42px;
-  color: #e8cc91;
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: clamp(28px, 7vw, 40px);
+  line-height: 1.8;
+  color: var(--gold);
 }
 
 .footer p {
-  font-size: 11px;
-  color: #e2cdd2;
   margin-top: 12px;
+  font-size: 11px;
   line-height: 1.9;
+  color: #e2cdd2;
 }
+
+/* SCROLL ANIMATION */
 
 .reveal {
   opacity: 0;
-  transform: translateY(22px);
+  transform: translateY(20px);
   transition: opacity .7s ease, transform .7s ease;
 }
 
@@ -471,54 +581,44 @@ button {
   transform: translateY(0);
 }
 
+/* MOBILE */
+
 @media (max-width: 600px) {
-  .hero-content {
-    padding: 35px 14px;
-  }
-
-  .eyebrow {
-    letter-spacing: 3px;
-    font-size: 10px;
-  }
-
-  .hero-message {
-    font-size: 20px;
-  }
-
   .section {
-    padding: 60px 17px;
+    padding: 55px 16px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail {
+    padding: 20px 12px;
   }
 
   .couple {
-    gap: 9px;
-  }
-
-  .detail-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .detail-card {
-    padding: 22px 12px;
+    gap: 10px;
   }
 
   .countdown {
-    gap: 7px;
+    gap: 6px;
   }
 
   .count-box {
-    padding: 16px 3px;
+    padding: 14px 3px;
   }
 
   .count-label {
     font-size: 8px;
-    letter-spacing: .7px;
   }
 
-  .action-buttons a,
-  .action-buttons button {
+  .actions .btn {
     width: 100%;
     max-width: 280px;
+  }
+
+  .popup-card {
+    padding: 30px 18px;
   }
 }
 
@@ -528,8 +628,8 @@ button {
   }
 
   *, *::before, *::after {
-    transition-duration: .01ms !important;
     animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
   }
 }
 </style>
@@ -537,16 +637,16 @@ button {
 
 <body>
 
-<!-- COVER -->
+<!-- WEDDING COVER -->
+
 <header class="hero" id="home">
-  <div class="hero-content">
-    <div class="om-symbol">ॐ</div>
+  <div class="hero-card">
+    <div class="om">ॐ</div>
+
     <p class="eyebrow">Together with our families</p>
 
-    <h1>
-      Sunil
-      <span class="ampersand">&amp;</span>
-      Priya
+    <h1 lang="hi">
+      सुनील <span class="amp">&amp;</span> प्रिया
     </h1>
 
     <p class="hero-date">15 FEBRUARY 2027 · 7:00 PM</p>
@@ -556,7 +656,7 @@ button {
       Join us as we begin our forever.
     </p>
 
-    <button class="primary-btn" id="openInvitation">
+    <button class="btn" id="openInvitation">
       ✦ Open Invitation ✦
     </button>
   </div>
@@ -564,43 +664,50 @@ button {
 
 <main>
 
-<!-- WELCOME -->
+<!-- INVITATION -->
+
 <section class="section reveal" id="invitation">
-  <div class="section-inner">
-    <p class="section-label">With love and blessings</p>
-    <h2>You Are Invited</h2>
+  <div class="inner">
+    <p class="label">With love and blessings</p>
+
+    <h2 lang="hi" class="hindi">शुभ विवाह</h2>
+
     <div class="divider"></div>
 
-    <p class="intro-text">
+    <p class="intro">
       With the blessings of our elders and the love of our families,
-      we joyfully invite you to celebrate the wedding of Sunil and Priya.
-      Your presence will make our special day even more memorable.
+      we joyfully invite you to celebrate the wedding of
+      सुनील and प्रिया. Your presence will make our special day
+      even more memorable.
     </p>
   </div>
 </section>
 
 <!-- COUPLE -->
-<section class="section names-section reveal">
-  <div class="section-inner">
-    <p class="section-label">The beginning of forever</p>
+
+<section class="section couple-section reveal">
+  <div class="inner">
+    <p class="label">The beginning of forever</p>
+
     <h2>Meet The Couple</h2>
+
     <div class="divider"></div>
 
     <div class="couple">
       <div>
-        <div class="person-name">Sunil</div>
-        <div class="person-caption">The Groom</div>
+        <div class="person" lang="hi">सुनील</div>
+        <div class="person-label">The Groom</div>
       </div>
 
-      <div class="couple-heart">♥</div>
+      <div class="heart-icon">♥</div>
 
       <div>
-        <div class="person-name">Priya</div>
-        <div class="person-caption">The Bride</div>
+        <div class="person" lang="hi">प्रिया</div>
+        <div class="person-label">The Bride</div>
       </div>
     </div>
 
-    <p class="intro-text">
+    <p class="intro">
       A beautiful new chapter begins, filled with love, laughter,
       family and countless wonderful memories.
     </p>
@@ -608,38 +715,41 @@ button {
 </section>
 
 <!-- WEDDING DETAILS -->
+
 <section class="section reveal" id="details">
-  <div class="section-inner">
-    <p class="section-label">Save the date</p>
+  <div class="inner">
+    <p class="label">Save the date</p>
+
     <h2>Wedding Celebration</h2>
+
     <div class="divider"></div>
 
-    <div class="detail-grid">
-      <div class="detail-card">
+    <div class="details-grid">
+      <div class="detail">
         <div class="detail-icon">♡</div>
         <h3>The Date</h3>
         <p>Monday<br>15 February 2027</p>
       </div>
 
-      <div class="detail-card">
+      <div class="detail">
         <div class="detail-icon">◷</div>
         <h3>The Time</h3>
         <p>7:00 PM onwards</p>
       </div>
 
-      <div class="detail-card">
+      <div class="detail">
         <div class="detail-icon">⌖</div>
         <h3>The Venue</h3>
         <p>Royal Garden<br>Ghazipur, Uttar Pradesh</p>
       </div>
     </div>
 
-    <div class="action-buttons">
-      <button class="outline-btn" id="calendarBtn">
+    <div class="actions">
+      <button class="btn btn-outline" id="calendarBtn">
         Add to Calendar
       </button>
 
-      <button class="outline-btn" id="shareBtn">
+      <button class="btn btn-outline" id="shareBtn">
         Share Invitation
       </button>
     </div>
@@ -647,13 +757,16 @@ button {
 </section>
 
 <!-- COUNTDOWN -->
+
 <section class="section countdown-section reveal">
-  <div class="section-inner">
-    <p class="section-label">Counting the moments</p>
+  <div class="inner">
+    <p class="label">Counting the moments</p>
+
     <h2>Until We Say “I Do”</h2>
+
     <div class="divider"></div>
 
-    <p class="intro-text">
+    <p class="intro">
       The countdown to our beautiful day has begun.
     </p>
 
@@ -681,61 +794,101 @@ button {
   </div>
 </section>
 
-<!-- SCRATCH CARD -->
-<section class="section surprise-section reveal">
-  <div class="section-inner">
-    <p class="section-label">A little surprise</p>
+<!-- HEART-SHAPED SCRATCH CARD -->
+
+<section class="section scratch-section reveal">
+  <div class="inner">
+    <p class="label">A little surprise</p>
+
     <h2>Scratch to Reveal</h2>
+
     <div class="divider"></div>
 
-    <p class="intro-text">
-      There is a little message waiting for you.
-      Scratch the card below to reveal it!
+    <p class="scratch-instruction">
+      A special surprise is waiting for you! Gently scratch
+      the heart with your finger to reveal the hidden message.
     </p>
 
-    <div class="scratch-wrap">
-      <div class="scratch-card" id="scratchCard">
-        <div class="scratch-message">
-          <span class="small">A message for you</span>
+    <div class="heart-scratch-wrap" id="heartScratchWrap">
+
+      <!-- HIDDEN MESSAGE -->
+
+      <div class="scratch-underneath">
+        <svg class="heart-shape" viewBox="0 0 300 280"
+             aria-hidden="true">
+          <defs>
+            <linearGradient id="heartBackground"
+                            x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fffdf6"/>
+              <stop offset="100%" stop-color="#f2d8c4"/>
+            </linearGradient>
+          </defs>
+
+          <path
+            d="M150 260
+               C130 240 18 158 18 85
+               C18 23 91 6 150 69
+               C209 6 282 23 282 85
+               C282 158 170 240 150 260 Z"
+            fill="url(#heartBackground)"
+            stroke="#c6a15b"
+            stroke-width="2"
+          />
+        </svg>
+
+        <div class="under-heart-content">
+          <div class="small-text">A special message</div>
+          <div class="heart-symbol">♥</div>
           <strong>You're Special!</strong>
-          <p>Thank you for being part of our happiness ♥</p>
         </div>
-        <canvas id="scratchCanvas"></canvas>
       </div>
 
-      <p class="scratch-hint">
-        ✨ Gently rub the card with your finger
-      </p>
+      <!-- SCRATCHABLE HEART COVER -->
+
+      <canvas id="scratchCanvas"
+              aria-label="Scratch the heart to reveal the surprise">
+      </canvas>
     </div>
+
+    <p class="scratch-hint">
+      ✨ Gently rub the heart with your finger
+    </p>
   </div>
 </section>
 
 <!-- VENUE -->
+
 <section class="section reveal" id="venue">
-  <div class="section-inner">
-    <p class="section-label">We can't wait to see you</p>
+  <div class="inner">
+    <p class="label">We can't wait to see you</p>
+
     <h2>Join Our Celebration</h2>
+
     <div class="divider"></div>
 
-    <div class="venue-box">
-      <div class="venue-name">Royal Garden</div>
-      <p class="venue-address">
+    <div class="detail">
+      <div class="detail-icon">⌖</div>
+
+      <h3>Royal Garden</h3>
+
+      <p>
         Ghazipur, Uttar Pradesh, India<br>
         15 February 2027 · 7:00 PM onwards
       </p>
 
-      <a
-        class="primary-btn"
-        href="https://www.google.com/maps/search/?api=1&query=Royal+Garden+Ghazipur+Uttar+Pradesh"
-        target="_blank"
-        rel="noopener noreferrer">
-        Open Google Maps
-      </a>
+      <div style="margin-top: 20px;">
+        <a class="btn"
+           href="https://www.google.com/maps/search/?api=1&query=Royal+Garden+Ghazipur+Uttar+Pradesh"
+           target="_blank"
+           rel="noopener noreferrer">
+          Open Google Maps
+        </a>
+      </div>
     </div>
 
-    <p class="intro-text">
-      Your blessings, smiles and presence are the most precious gifts
-      you can bring. We look forward to celebrating with you!
+    <p class="intro">
+      Your blessings, smiles and presence are the most precious
+      gifts you can bring. We look forward to celebrating with you!
     </p>
   </div>
 </section>
@@ -743,145 +896,166 @@ button {
 </main>
 
 <!-- FOOTER -->
+
 <footer class="footer">
-  <div class="footer-names">Sunil ♥ Priya</div>
+  <div class="footer-names" lang="hi">सुनील ♥ प्रिया</div>
+
   <p>
     Made with love for our special day.<br>
     We look forward to celebrating with you!
   </p>
 </footer>
 
+<!-- POPUP AFTER SCRATCHING -->
+
+<div class="popup-overlay" id="popupOverlay"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="popupTitle">
+
+  <div class="popup-card">
+    <div class="popup-flower">🌸</div>
+
+    <p class="label">A beautiful beginning</p>
+
+    <h2 id="popupTitle" lang="hi">शुभ विवाह</h2>
+
+    <div class="popup-names" lang="hi">
+      सुनील ♥ प्रिया
+    </div>
+
+    <p class="popup-message">
+      A new journey of love begins!<br>
+      Thank you for being part of our happiness.<br>
+      Your love and blessings mean the world to us.
+    </p>
+
+    <button class="close-popup" id="closePopup">
+      Close
+    </button>
+  </div>
+</div>
+
+<!-- FLOWERS FALLING OVER THE SCREEN -->
+
+<div class="flower-layer" id="flowerLayer"
+     aria-hidden="true"></div>
+
 <script>
-/*
-  WEDDING DETAILS
-  Change these details here when needed.
-*/
+/* WEDDING DETAILS */
+
 const wedding = {
-  groom: "Sunil",
-  bride: "Priya",
+  groom: "सुनील",
+  bride: "प्रिया",
   dateText: "15 February 2027",
   timeText: "7:00 PM onwards",
   venue: "Royal Garden, Ghazipur, Uttar Pradesh",
-  hosts: "The Sharma Family",
-  dateTime: "2027-02-15T19:00:00+05:30",
-  mapsQuery: "Royal Garden, Ghazipur, Uttar Pradesh"
+  dateTime: "2027-02-15T19:00:00+05:30"
 };
 
-/* Open invitation */
+/* OPEN INVITATION */
+
 document.getElementById("openInvitation").addEventListener("click", () => {
   document.getElementById("invitation").scrollIntoView({
     behavior: "smooth"
   });
 });
 
-/* Scroll reveal animations */
-const revealObserver = new IntersectionObserver((entries) => {
+/* SCROLL REVEAL */
+
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
-      revealObserver.unobserve(entry.target);
+      observer.unobserve(entry.target);
     }
   });
-}, {
-  threshold: 0.12
-});
+}, { threshold: 0.12 });
 
 document.querySelectorAll(".reveal").forEach(section => {
-  revealObserver.observe(section);
+  observer.observe(section);
 });
 
-/* Countdown timer */
-const weddingDate = new Date(wedding.dateTime).getTime();
+/* WEDDING COUNTDOWN */
+
+const weddingTime = new Date(wedding.dateTime).getTime();
 
 function updateCountdown() {
-  const now = Date.now();
-  const distance = weddingDate - now;
+  const distance = weddingTime - Date.now();
 
   if (distance <= 0) {
-    document.getElementById("days").textContent = "000";
-    document.getElementById("hours").textContent = "00";
-    document.getElementById("minutes").textContent = "00";
-    document.getElementById("seconds").textContent = "00";
+    ["days", "hours", "minutes", "seconds"].forEach(id => {
+      document.getElementById(id).textContent = "00";
+    });
     return;
   }
 
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((distance / (1000 * 60)) % 60);
-  const seconds = Math.floor((distance / 1000) % 60);
-
   document.getElementById("days").textContent =
-    String(days).padStart(3, "0");
+    String(Math.floor(distance / 86400000)).padStart(3, "0");
 
   document.getElementById("hours").textContent =
-    String(hours).padStart(2, "0");
+    String(Math.floor(distance / 3600000) % 24).padStart(2, "0");
 
   document.getElementById("minutes").textContent =
-    String(minutes).padStart(2, "0");
+    String(Math.floor(distance / 60000) % 60).padStart(2, "0");
 
   document.getElementById("seconds").textContent =
-    String(seconds).padStart(2, "0");
+    String(Math.floor(distance / 1000) % 60).padStart(2, "0");
 }
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
-/* Share invitation */
+/* SHARE INVITATION */
+
 document.getElementById("shareBtn").addEventListener("click", async () => {
-  const shareText =
-    "You are invited to the wedding of Sunil & Priya!\n\n" +
+  const message =
+    "You are invited to the wedding of " +
+    wedding.groom + " and " + wedding.bride + "!\n\n" +
     "Date: " + wedding.dateText + "\n" +
     "Time: " + wedding.timeText + "\n" +
     "Venue: " + wedding.venue + "\n\n" +
     "We look forward to celebrating with you!";
 
-  const shareData = {
-    title: "Sunil & Priya — Wedding Invitation",
-    text: shareText,
+  const data = {
+    title: "Wedding Invitation",
+    text: message,
     url: window.location.href
   };
 
   try {
     if (navigator.share) {
-      await navigator.share(shareData);
-    } else if (navigator.clipboard && window.isSecureContext) {
-      await navigator.clipboard.writeText(
-        shareText + "\n\n" + window.location.href
-      );
-      alert("Invitation copied! You can now paste it into WhatsApp.");
+      await navigator.share(data);
     } else {
       window.open(
-        "https://wa.me/?text=" + encodeURIComponent(
-          shareText + "\n\n" + window.location.href
-        ),
+        "https://wa.me/?text=" +
+        encodeURIComponent(message + "\n" + window.location.href),
         "_blank"
       );
     }
   } catch (error) {
     if (error.name !== "AbortError") {
       window.open(
-        "https://wa.me/?text=" + encodeURIComponent(shareText),
+        "https://wa.me/?text=" + encodeURIComponent(message),
         "_blank"
       );
     }
   }
 });
 
-/* Add event to calendar */
-document.getElementById("calendarBtn").addEventListener("click", () => {
-  const start = "20270215T133000Z";
-  const end = "20270215T163000Z";
+/* ADD TO CALENDAR */
 
-  const calendarText = [
+document.getElementById("calendarBtn").addEventListener("click", () => {
+  const calendarContent = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Sunil and Priya//Wedding Invitation//EN",
+    "PRODID:-//Wedding Invitation//EN",
     "CALSCALE:GREGORIAN",
     "BEGIN:VEVENT",
     "UID:sunil-priya-wedding-20270215@example.com",
     "DTSTAMP:20261101T000000Z",
-    "DTSTART:" + start,
-    "DTEND:" + end,
+    "DTSTART:20270215T133000Z",
+    "DTEND:20270215T163000Z",
     "SUMMARY:Wedding of Sunil and Priya",
     "LOCATION:Royal Garden\\, Ghazipur\\, Uttar Pradesh",
     "DESCRIPTION:Wedding celebration of Sunil and Priya.",
@@ -889,7 +1063,7 @@ document.getElementById("calendarBtn").addEventListener("click", () => {
     "END:VCALENDAR"
   ].join("\r\n");
 
-  const blob = new Blob([calendarText], {
+  const blob = new Blob([calendarContent], {
     type: "text/calendar;charset=utf-8"
   });
 
@@ -897,28 +1071,66 @@ document.getElementById("calendarBtn").addEventListener("click", () => {
   const link = document.createElement("a");
 
   link.href = url;
-  link.download = "Sunil-Priya-Wedding.ics";
+  link.download = "Wedding-Invitation.ics";
   document.body.appendChild(link);
   link.click();
   link.remove();
 
-  URL.revokeObjectURL(url);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 });
 
-/* Scratch-to-reveal card */
-(function setupScratchCard() {
+/* HEART-SHAPED SCRATCH CARD */
+
+(function setupHeartScratch() {
   const canvas = document.getElementById("scratchCanvas");
-  const card = document.getElementById("scratchCard");
+  const wrap = document.getElementById("heartScratchWrap");
   const ctx = canvas.getContext("2d");
 
-  if (!ctx) return;
+  const popup = document.getElementById("popupOverlay");
+  const flowerLayer = document.getElementById("flowerLayer");
 
   let isDrawing = false;
-  let revealed = false;
+  let completed = false;
+  let lastCheck = 0;
+  let flowerInterval = null;
 
-  function drawCover() {
-    const rect = card.getBoundingClientRect();
-    const dpr = window.devicePixelRatio || 1;
+  const flowers = ["🌸", "🌺", "🌼", "🌷", "💮", "✿"];
+
+  function heartPath(context, width, height) {
+    context.beginPath();
+
+    context.moveTo(width * 0.5, height * 0.93);
+
+    context.bezierCurveTo(
+      width * 0.43, height * 0.83,
+      width * 0.06, height * 0.57,
+      width * 0.06, height * 0.30
+    );
+
+    context.bezierCurveTo(
+      width * 0.06, height * 0.06,
+      width * 0.34, height * 0.02,
+      width * 0.5, height * 0.26
+    );
+
+    context.bezierCurveTo(
+      width * 0.66, height * 0.02,
+      width * 0.94, height * 0.06,
+      width * 0.94, height * 0.30
+    );
+
+    context.bezierCurveTo(
+      width * 0.94, height * 0.57,
+      width * 0.57, height * 0.83,
+      width * 0.5, height * 0.93
+    );
+
+    context.closePath();
+  }
+
+  function drawScratchCover() {
+    const rect = wrap.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
     canvas.width = Math.round(rect.width * dpr);
     canvas.height = Math.round(rect.height * dpr);
@@ -928,102 +1140,171 @@ document.getElementById("calendarBtn").addEventListener("click", () => {
 
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.globalCompositeOperation = "source-over";
+    ctx.clearRect(0, 0, rect.width, rect.height);
+
+    /* Clip everything to the heart shape */
+
+    heartPath(ctx, rect.width, rect.height);
+    ctx.save();
+    ctx.clip();
 
     const gradient = ctx.createLinearGradient(
       0, 0, rect.width, rect.height
     );
 
-    gradient.addColorStop(0, "#7b2036");
-    gradient.addColorStop(0.5, "#9c4b5d");
-    gradient.addColorStop(1, "#592035");
+    gradient.addColorStop(0, "#6a1833");
+    gradient.addColorStop(0.5, "#a44860");
+    gradient.addColorStop(1, "#501328");
 
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, rect.width, rect.height);
 
-    ctx.strokeStyle = "#e6c888";
-    ctx.lineWidth = 1;
-    ctx.strokeRect(12, 12, rect.width - 24, rect.height - 24);
+    /* Gold heart outline */
 
-    ctx.fillStyle = "#f4dfb2";
+    heartPath(ctx, rect.width, rect.height);
+    ctx.strokeStyle = "#e8cc91";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    /* Scratch card text */
+
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
+    ctx.fillStyle = "#fff0cc";
 
-    ctx.font = "24px Georgia, serif";
-    ctx.fillText("♥", rect.width / 2, rect.height / 2 - 23);
+    ctx.font = "27px Georgia, serif";
+    ctx.fillText("♥", rect.width / 2, rect.height * 0.38);
 
-    ctx.font = "600 13px Poppins, sans-serif";
-    ctx.fillText("SCRATCH HERE", rect.width / 2, rect.height / 2 + 12);
+    ctx.font = "600 12px Poppins, sans-serif";
+    ctx.fillText("SCRATCH HERE", rect.width / 2, rect.height * 0.52);
 
-    ctx.font = "11px Poppins, sans-serif";
-    ctx.fillText("A special message awaits", rect.width / 2, rect.height / 2 + 35);
+    ctx.font = "10px Poppins, sans-serif";
+    ctx.fillText(
+      "A special surprise awaits",
+      rect.width / 2,
+      rect.height * 0.60
+    );
 
+    ctx.restore();
     ctx.globalCompositeOperation = "destination-out";
   }
 
   function getPosition(event) {
     const rect = canvas.getBoundingClientRect();
 
-    let clientX;
-    let clientY;
-
-    if (event.touches && event.touches.length) {
-      clientX = event.touches[0].clientX;
-      clientY = event.touches[0].clientY;
-    } else {
-      clientX = event.clientX;
-      clientY = event.clientY;
-    }
-
     return {
-      x: clientX - rect.left,
-      y: clientY - rect.top
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top
     };
   }
 
   function scratch(event) {
-    if (!isDrawing || revealed) return;
+    if (!isDrawing || completed) return;
 
     if (event.cancelable) event.preventDefault();
 
     const pos = getPosition(event);
 
+    ctx.save();
+
+    /* Erase only inside the heart shape */
+
+    heartPath(
+      ctx,
+      canvas.getBoundingClientRect().width,
+      canvas.getBoundingClientRect().height
+    );
+
+    ctx.clip();
+    ctx.globalCompositeOperation = "destination-out";
     ctx.beginPath();
-    ctx.arc(pos.x, pos.y, 19, 0, Math.PI * 2);
+    ctx.arc(pos.x, pos.y, 20, 0, Math.PI * 2);
     ctx.fill();
 
-    checkReveal();
+    ctx.restore();
+
+    const now = performance.now();
+
+    if (now - lastCheck > 350) {
+      lastCheck = now;
+      checkScratchProgress();
+    }
   }
 
-  function checkReveal() {
-    const pixels = ctx.getImageData(
-      0, 0, canvas.width, canvas.height
-    ).data;
+  function checkScratchProgress() {
+    if (completed) return;
 
-    let transparent = 0;
-    let total = 0;
+    try {
+      const rect = wrap.getBoundingClientRect();
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
-    for (let i = 3; i < pixels.length; i += 4) {
-      total++;
+      const width = Math.round(rect.width * dpr);
+      const height = Math.round(rect.height * dpr);
 
-      if (pixels[i] < 30) {
-        transparent++;
+      const pixels = ctx.getImageData(
+        0, 0, width, height
+      ).data;
+
+      /* Sample pixels instead of checking every pixel */
+
+      let transparent = 0;
+      let total = 0;
+
+      for (let y = 0; y < height; y += 8) {
+        for (let x = 0; x < width; x += 8) {
+          const index = (y * width + x) * 4;
+
+          if (pixels[index + 3] < 40) {
+            transparent++;
+          }
+
+          total++;
+        }
       }
+
+      if (total > 0 && transparent / total > 0.42) {
+        finishScratch();
+      }
+    } catch (error) {
+      console.log("Scratch progress check unavailable.");
     }
+  }
 
-    if (total && transparent / total > 0.48) {
-      revealed = true;
-      canvas.style.transition = "opacity .5s ease";
-      canvas.style.opacity = "0";
+  function finishScratch() {
+    if (completed) return;
 
-      setTimeout(() => {
-        canvas.style.display = "none";
-      }, 550);
+    completed = true;
+    isDrawing = false;
+
+    canvas.style.transition = "opacity .6s ease";
+    canvas.style.opacity = "0";
+    canvas.style.pointerEvents = "none";
+
+    setTimeout(() => {
+      canvas.style.visibility = "hidden";
+    }, 650);
+
+    /* Open the animated popup */
+
+    setTimeout(() => {
+      popup.classList.add("show");
+      startFlowerRain();
+    }, 300);
+
+    if (navigator.vibrate) {
+      navigator.vibrate([40, 30, 80]);
     }
   }
 
   canvas.addEventListener("pointerdown", event => {
+    if (completed) return;
+
     isDrawing = true;
-    canvas.setPointerCapture(event.pointerId);
+
+    if (canvas.setPointerCapture) {
+      canvas.setPointerCapture(event.pointerId);
+    }
+
     scratch(event);
   });
 
@@ -1031,21 +1312,110 @@ document.getElementById("calendarBtn").addEventListener("click", () => {
 
   canvas.addEventListener("pointerup", () => {
     isDrawing = false;
+    checkScratchProgress();
   });
 
   canvas.addEventListener("pointercancel", () => {
     isDrawing = false;
   });
 
-  canvas.addEventListener("pointerleave", () => {
+  canvas.addEventListener("lostpointercapture", () => {
     isDrawing = false;
   });
 
-  drawCover();
+  drawScratchCover();
 
   window.addEventListener("resize", () => {
-    if (!revealed) drawCover();
+    if (!completed) {
+      drawScratchCover();
+    }
   });
+
+  /* FLOWERS FALL FROM THE TOP EDGES */
+
+  function createFlower() {
+    if (document.hidden) return;
+
+    const flower = document.createElement("span");
+    flower.className = "falling-flower";
+
+    flower.textContent =
+      flowers[Math.floor(Math.random() * flowers.length)];
+
+    const fromLeft = Math.random() < 0.5;
+
+    /*
+      Flowers begin near the left or right screen edge,
+      then drift across the screen as they fall.
+    */
+
+    const edgePosition = fromLeft
+      ? Math.random() * 18
+      : 82 + Math.random() * 18;
+
+    const size = 17 + Math.random() * 18;
+    const duration = 4.5 + Math.random() * 4.5;
+    const drift = (Math.random() * 100 - 50) + "px";
+
+    flower.style.left = edgePosition + "vw";
+    flower.style.fontSize = size + "px";
+    flower.style.animationDuration = duration + "s";
+    flower.style.setProperty("--drift", drift);
+
+    flowerLayer.appendChild(flower);
+
+    flower.addEventListener("animationend", () => {
+      flower.remove();
+    });
+
+    /* Keep the page lightweight */
+
+    while (flowerLayer.children.length > 55) {
+      flowerLayer.firstElementChild.remove();
+    }
+  }
+
+  function startFlowerRain() {
+    if (flowerInterval) return;
+
+    /* A burst immediately, followed by continuous flowers */
+
+    for (let i = 0; i < 16; i++) {
+      setTimeout(createFlower, i * 100);
+    }
+
+    flowerInterval = setInterval(createFlower, 260);
+
+    /* Stop creating new flowers after 15 seconds */
+
+    setTimeout(() => {
+      clearInterval(flowerInterval);
+      flowerInterval = null;
+    }, 15000);
+  }
+
+  /* POPUP CLOSE BUTTON */
+
+  document.getElementById("closePopup").addEventListener("click", () => {
+    popup.classList.remove("show");
+  });
+
+  /* Close popup when tapping outside the card */
+
+  popup.addEventListener("click", event => {
+    if (event.target === popup) {
+      popup.classList.remove("show");
+    }
+  });
+
+  /* Close popup with Escape key */
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      popup.classList.remove("show");
+    }
+  });
+
 })();
 </script>
 
