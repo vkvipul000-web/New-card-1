@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#7b2036">
+<meta name="description" content="You are cordially invited to celebrate the wedding of Sunil and Priya.">
+<title>Sunil ♥ Priya | Wedding Invitation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --wine: #79263b;
+  --deep-wine: #4d1427;
+  --gold: #c6a15b;
+  --cream: #fff9ef;
+  --text: #4a2930;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 100svh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 18px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at top, rgba(198,161,91,.18), transparent 55%),
+    linear-gradient(145deg, #421020, #842b43 55%, #4b1527);
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(226,196,129,.55);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero::before {
+  top: -130px;
+  left: -100px;
+  box-shadow: 0 0 0 18px rgba(226,196,129,.05),
+              0 0 0 36px rgba(226,196,129,.05);
+}
+
+.hero::after {
+  bottom: -150px;
+  right: -100px;
+  box-shadow: 0 0 0 18px rgba(226,196,129,.05),
+              0 0 0 36px rgba(226,196,129,.05);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 650px;
+  width: 100%;
+  padding: 40px 20px;
+  border: 1px solid rgba(226,196,129,.65);
+  outline: 1px solid rgba(226,196,129,.25);
+  outline-offset: 8px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #e8cc91;
+  margin-bottom: 24px;
+}
+
+.om-symbol {
+  color: #e8cc91;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: clamp(48px, 10vw, 86px);
+  line-height: 1.05;
+}
+
+.ampersand {
+  color: #e8cc91;
+  font-style: italic;
+  font-size: .7em;
+  margin: 0 8px;
+}
+
+.hero-date {
+  margin-top: 22px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #f1dfbb;
+}
+
+.hero-message {
+  margin: 25px auto;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 23px;
+  line-height: 1.5;
+  max-width: 430px;
+}
+
+.primary-btn,
+.outline-btn {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 14px 25px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+.primary-btn {
+  border: 1px solid var(--gold);
+  color: var(--deep-wine);
+  background: #e4c784;
+}
+
+.primary-btn:hover {
+  background: #f2dfb3;
+  transform: translateY(-2px);
+}
+
+.outline-btn {
+  color: var(--wine);
+  border: 1px solid var(--gold);
+  background: transparent;
+}
+
+.outline-btn:hover {
+  background: var(--wine);
+  color: white;
+}
+
+.hero .primary-btn {
+  margin-top: 10px;
+}
+
+.section {
+  padding: 75px 20px;
+  text-align: center;
+}
+
+.section-inner {
+  max-width: 850px;
+  margin: auto;
+}
+
+.section-label {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--wine);
+  font-size: clamp(36px, 7vw, 54px);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.divider {
+  width: 90px;
+  height: 1px;
+  background: var(--gold);
+  margin: 22px auto;
+  position: relative;
+}
+
+.divider::after {
+  content: "◆";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--gold);
+  font-size: 10px;
+  background: var(--cream);
+  padding: 0 9px;
+}
+
+.intro-text {
+  max-width: 620px;
+  margin: 20px auto 0;
+  font-size: 14px;
+  line-height: 2;
+  color: #795b60;
+}
+
+.names-section {
+  background: #f6ebdc;
+}
+
+.couple {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 22px;
+  margin: 35px 0 10px;
+}
+
+.person-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(34px, 7vw, 56px);
+  line-height: 1.1;
+  color: var(--wine);
+}
+
+.person-caption {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 12px;
+  color: #97747b;
+}
+
+.couple-heart {
+  color: var(--gold);
+  font-size: 32px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 38px;
+}
+
+.detail-card {
+  padding: 27px 12px;
+  border: 1px solid #e4d1b2;
+  background: rgba(255,255,255,.55);
+}
+
+.detail-icon {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.detail-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--wine);
+  margin-bottom: 9px;
+}
+
+.detail-card p {
+  font-size: 12px;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.countdown-section {
+  background: var(--deep-wine);
+  color: white;
+}
+
+.countdown-section h2 {
+  color: white;
+}
+
+.countdown-section .section-label {
+  color: #e6c888;
+}
+
+.countdown-section .intro-text {
+  color: #ead9d5;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 520px;
+  margin: 32px auto 0;
+}
+
+.count-box {
+  padding: 20px 6px;
+  border: 1px solid rgba(226,196,129,.5);
+  background: rgba(255,255,255,.04);
+}
+
+.count-number {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(30px, 6vw, 46px);
+  color: #e8cc91;
+}
+
+.count-label {
+  display: block;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 7px;
+}
+
+.surprise-section {
+  background: #f6ebdc;
+}
+
+.scratch-wrap {
+  max-width: 420px;
+  margin: 30px auto 0;
+}
+
+.scratch-card {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  border: 1px solid var(--gold);
+  background: white;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.scratch-message {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  background: #fffaf1;
+}
+
+.scratch-message .small {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #a27d42;
+  text-transform: uppercase;
+}
+
+.scratch-message strong {
+  display: block;
+  margin-top: 12px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--wine);
+}
+
+.scratch-message p {
+  margin-top: 7px;
+  font-size: 11px;
+}
+
+#scratchCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.scratch-hint {
+  margin-top: 12px;
+  font-size: 11px;
+  color: #8c6d70;
+}
+
+.venue-box {
+  border: 1px solid #e3cfad;
+  padding: 30px 18px;
+  margin-top: 30px;
+  background: rgba(255,255,255,.5);
+}
+
+.venue-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  color: var(--wine);
+  margin-bottom: 8px;
+}
+
+.venue-address {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #795b60;
+  margin-bottom: 22px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.footer {
+  background: #35101d;
+  color: white;
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.footer-names {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  color: #e8cc91;
+}
+
+.footer p {
+  font-size: 11px;
+  color: #e2cdd2;
+  margin-top: 12px;
+  line-height: 1.9;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    padding: 35px 14px;
+  }
+
+  .eyebrow {
+    letter-spacing: 3px;
+    font-size: 10px;
+  }
+
+  .hero-message {
+    font-size: 20px;
+  }
+
+  .section {
+    padding: 60px 17px;
+  }
+
+  .couple {
+    gap: 9px;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .detail-card {
+    padding: 22px 12px;
+  }
+
+  .countdown {
+    gap: 7px;
+  }
+
+  .count-box {
+    padding: 16px 3px;
+  }
+
+  .count-label {
+    font-size: 8px;
+    letter-spacing: .7px;
+  }
+
+  .action-buttons a,
+  .action-buttons button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- COVER -->
+<header class="hero" id="home">
+  <div class="hero-content">
+    <div class="om-symbol">ॐ</div>
+    <p class="eyebrow">Together with our families</p>
+
+    <h1>
+      Sunil
+      <span class="ampersand">&amp;</span>
+      Priya
+    </h1>
+
+    <p class="hero-date">15 FEBRUARY 2027 · 7:00 PM</p>
+
+    <p class="hero-message">
+      Two hearts, one beautiful journey.<br>
+      Join us as we begin our forever.
+    </p>
+
+    <button class="primary-btn" id="openInvitation">
+      ✦ Open Invitation ✦
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- WELCOME -->
+<section class="section reveal" id="invitation">
+  <div class="section-inner">
+    <p class="section-label">With love and blessings</p>
+    <h2>You Are Invited</h2>
+    <div class="divider"></div>
+
+    <p class="intro-text">
+      With the blessings of our elders and the love of our families,
+      we joyfully invite you to celebrate the wedding of Sunil and Priya.
+      Your presence will make our special day even more memorable.
+    </p>
+  </div>
+</section>
+
+<!-- COUPLE -->
+<section class="section names-section reveal">
+  <div class="section-inner">
+    <p class="section-label">The beginning of forever</p>
+    <h2>Meet The Couple</h2>
+    <div class="divider"></div>
+
+    <div class="couple">
+      <div>
+        <div class="person-name">Sunil</div>
+        <div class="person-caption">The Groom</div>
+      </div>
+
+      <div class="couple-heart">♥</div>
+
+      <div>
+        <div class="person-name">Priya</div>
+        <div class="person-caption">The Bride</div>
+      </div>
+    </div>
+
+    <p class="intro-text">
+      A beautiful new chapter begins, filled with love, laughter,
+      family and countless wonderful memories.
+    </p>
+  </div>
+</section>
+
+<!-- WEDDING DETAILS -->
+<section class="section reveal" id="details">
+  <div class="section-inner">
+    <p class="section-label">Save the date</p>
+    <h2>Wedding Celebration</h2>
+    <div class="divider"></div>
+
+    <div class="detail-grid">
+      <div class="detail-card">
+        <div class="detail-icon">♡</div>
+        <h3>The Date</h3>
+        <p>Monday<br>15 February 2027</p>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-icon">◷</div>
+        <h3>The Time</h3>
+        <p>7:00 PM onwards</p>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-icon">⌖</div>
+        <h3>The Venue</h3>
+        <p>Royal Garden<br>Ghazipur, Uttar Pradesh</p>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <button class="outline-btn" id="calendarBtn">
+        Add to Calendar
+      </button>
+
+      <button class="outline-btn" id="shareBtn">
+        Share Invitation
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="section countdown-section reveal">
+  <div class="section-inner">
+    <p class="section-label">Counting the moments</p>
+    <h2>Until We Say “I Do”</h2>
+    <div class="divider"></div>
+
+    <p class="intro-text">
+      The countdown to our beautiful day has begun.
+    </p>
+
+    <div class="countdown">
+      <div class="count-box">
+        <span class="count-number" id="days">000</span>
+        <span class="count-label">Days</span>
+      </div>
+
+      <div class="count-box">
+        <span class="count-number" id="hours">00</span>
+        <span class="count-label">Hours</span>
+      </div>
+
+      <div class="count-box">
+        <span class="count-number" id="minutes">00</span>
+        <span class="count-label">Minutes</span>
+      </div>
+
+      <div class="count-box">
+        <span class="count-number" id="seconds">00</span>
+        <span class="count-label">Seconds</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCRATCH CARD -->
+<section class="section surprise-section reveal">
+  <div class="section-inner">
+    <p class="section-label">A little surprise</p>
+    <h2>Scratch to Reveal</h2>
+    <div class="divider"></div>
+
+    <p class="intro-text">
+      There is a little message waiting for you.
+      Scratch the card below to reveal it!
+    </p>
+
+    <div class="scratch-wrap">
+      <div class="scratch-card" id="scratchCard">
+        <div class="scratch-message">
+          <span class="small">A message for you</span>
+          <strong>You're Special!</strong>
+          <p>Thank you for being part of our happiness ♥</p>
+        </div>
+        <canvas id="scratchCanvas"></canvas>
+      </div>
+
+      <p class="scratch-hint">
+        ✨ Gently rub the card with your finger
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- VENUE -->
+<section class="section reveal" id="venue">
+  <div class="section-inner">
+    <p class="section-label">We can't wait to see you</p>
+    <h2>Join Our Celebration</h2>
+    <div class="divider"></div>
+
+    <div class="venue-box">
+      <div class="venue-name">Royal Garden</div>
+      <p class="venue-address">
+        Ghazipur, Uttar Pradesh, India<br>
+        15 February 2027 · 7:00 PM onwards
+      </p>
+
+      <a
+        class="primary-btn"
+        href="https://www.google.com/maps/search/?api=1&query=Royal+Garden+Ghazipur+Uttar+Pradesh"
+        target="_blank"
+        rel="noopener noreferrer">
+        Open Google Maps
+      </a>
+    </div>
+
+    <p class="intro-text">
+      Your blessings, smiles and presence are the most precious gifts
+      you can bring. We look forward to celebrating with you!
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-names">Sunil ♥ Priya</div>
+  <p>
+    Made with love for our special day.<br>
+    We look forward to celebrating with you!
+  </p>
+</footer>
+
+<script>
+/*
+  WEDDING DETAILS
+  Change these details here when needed.
+*/
+const wedding = {
+  groom: "Sunil",
+  bride: "Priya",
+  dateText: "15 February 2027",
+  timeText: "7:00 PM onwards",
+  venue: "Royal Garden, Ghazipur, Uttar Pradesh",
+  hosts: "The Sharma Family",
+  dateTime: "2027-02-15T19:00:00+05:30",
+  mapsQuery: "Royal Garden, Ghazipur, Uttar Pradesh"
+};
+
+/* Open invitation */
+document.getElementById("openInvitation").addEventListener("click", () => {
+  document.getElementById("invitation").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
+/* Scroll reveal animations */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.12
+});
+
+document.querySelectorAll(".reveal").forEach(section => {
+  revealObserver.observe(section);
+});
+
+/* Countdown timer */
+const weddingDate = new Date(wedding.dateTime).getTime();
+
+function updateCountdown() {
+  const now = Date.now();
+  const distance = weddingDate - now;
+
+  if (distance <= 0) {
+    document.getElementById("days").textContent = "000";
+    document.getElementById("hours").textContent = "00";
+    document.getElementById("minutes").textContent = "00";
+    document.getElementById("seconds").textContent = "00";
+    return;
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((distance / (1000 * 60)) % 60);
+  const seconds = Math.floor((distance / 1000) % 60);
+
+  document.getElementById("days").textContent =
+    String(days).padStart(3, "0");
+
+  document.getElementById("hours").textContent =
+    String(hours).padStart(2, "0");
+
+  document.getElementById("minutes").textContent =
+    String(minutes).padStart(2, "0");
+
+  document.getElementById("seconds").textContent =
+    String(seconds).padStart(2, "0");
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+/* Share invitation */
+document.getElementById("shareBtn").addEventListener("click", async () => {
+  const shareText =
+    "You are invited to the wedding of Sunil & Priya!\n\n" +
+    "Date: " + wedding.dateText + "\n" +
+    "Time: " + wedding.timeText + "\n" +
+    "Venue: " + wedding.venue + "\n\n" +
+    "We look forward to celebrating with you!";
+
+  const shareData = {
+    title: "Sunil & Priya — Wedding Invitation",
+    text: shareText,
+    url: window.location.href
+  };
+
+  try {
+    if (navigator.share) {
+      await navigator.share(shareData);
+    } else if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(
+        shareText + "\n\n" + window.location.href
+      );
+      alert("Invitation copied! You can now paste it into WhatsApp.");
+    } else {
+      window.open(
+        "https://wa.me/?text=" + encodeURIComponent(
+          shareText + "\n\n" + window.location.href
+        ),
+        "_blank"
+      );
+    }
+  } catch (error) {
+    if (error.name !== "AbortError") {
+      window.open(
+        "https://wa.me/?text=" + encodeURIComponent(shareText),
+        "_blank"
+      );
+    }
+  }
+});
+
+/* Add event to calendar */
+document.getElementById("calendarBtn").addEventListener("click", () => {
+  const start = "20270215T133000Z";
+  const end = "20270215T163000Z";
+
+  const calendarText = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//Sunil and Priya//Wedding Invitation//EN",
+    "CALSCALE:GREGORIAN",
+    "BEGIN:VEVENT",
+    "UID:sunil-priya-wedding-20270215@example.com",
+    "DTSTAMP:20261101T000000Z",
+    "DTSTART:" + start,
+    "DTEND:" + end,
+    "SUMMARY:Wedding of Sunil and Priya",
+    "LOCATION:Royal Garden\\, Ghazipur\\, Uttar Pradesh",
+    "DESCRIPTION:Wedding celebration of Sunil and Priya.",
+    "END:VEVENT",
+    "END:VCALENDAR"
+  ].join("\r\n");
+
+  const blob = new Blob([calendarText], {
+    type: "text/calendar;charset=utf-8"
+  });
+
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+
+  link.href = url;
+  link.download = "Sunil-Priya-Wedding.ics";
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+
+  URL.revokeObjectURL(url);
+});
+
+/* Scratch-to-reveal card */
+(function setupScratchCard() {
+  const canvas = document.getElementById("scratchCanvas");
+  const card = document.getElementById("scratchCard");
+  const ctx = canvas.getContext("2d");
+
+  if (!ctx) return;
+
+  let isDrawing = false;
+  let revealed = false;
+
+  function drawCover() {
+    const rect = card.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+
+    canvas.width = Math.round(rect.width * dpr);
+    canvas.height = Math.round(rect.height * dpr);
+
+    canvas.style.width = rect.width + "px";
+    canvas.style.height = rect.height + "px";
+
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.globalCompositeOperation = "source-over";
+
+    const gradient = ctx.createLinearGradient(
+      0, 0, rect.width, rect.height
+    );
+
+    gradient.addColorStop(0, "#7b2036");
+    gradient.addColorStop(0.5, "#9c4b5d");
+    gradient.addColorStop(1, "#592035");
+
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, rect.width, rect.height);
+
+    ctx.strokeStyle = "#e6c888";
+    ctx.lineWidth = 1;
+    ctx.strokeRect(12, 12, rect.width - 24, rect.height - 24);
+
+    ctx.fillStyle = "#f4dfb2";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+
+    ctx.font = "24px Georgia, serif";
+    ctx.fillText("♥", rect.width / 2, rect.height / 2 - 23);
+
+    ctx.font = "600 13px Poppins, sans-serif";
+    ctx.fillText("SCRATCH HERE", rect.width / 2, rect.height / 2 + 12);
+
+    ctx.font = "11px Poppins, sans-serif";
+    ctx.fillText("A special message awaits", rect.width / 2, rect.height / 2 + 35);
+
+    ctx.globalCompositeOperation = "destination-out";
+  }
+
+  function getPosition(event) {
+    const rect = canvas.getBoundingClientRect();
+
+    let clientX;
+    let clientY;
+
+    if (event.touches && event.touches.length) {
+      clientX = event.touches[0].clientX;
+      clientY = event.touches[0].clientY;
+    } else {
+      clientX = event.clientX;
+      clientY = event.clientY;
+    }
+
+    return {
+      x: clientX - rect.left,
+      y: clientY - rect.top
+    };
+  }
+
+  function scratch(event) {
+    if (!isDrawing || revealed) return;
+
+    if (event.cancelable) event.preventDefault();
+
+    const pos = getPosition(event);
+
+    ctx.beginPath();
+    ctx.arc(pos.x, pos.y, 19, 0, Math.PI * 2);
+    ctx.fill();
+
+    checkReveal();
+  }
+
+  function checkReveal() {
+    const pixels = ctx.getImageData(
+      0, 0, canvas.width, canvas.height
+    ).data;
+
+    let transparent = 0;
+    let total = 0;
+
+    for (let i = 3; i < pixels.length; i += 4) {
+      total++;
+
+      if (pixels[i] < 30) {
+        transparent++;
+      }
+    }
+
+    if (total && transparent / total > 0.48) {
+      revealed = true;
+      canvas.style.transition = "opacity .5s ease";
+      canvas.style.opacity = "0";
+
+      setTimeout(() => {
+        canvas.style.display = "none";
+      }, 550);
+    }
+  }
+
+  canvas.addEventListener("pointerdown", event => {
+    isDrawing = true;
+    canvas.setPointerCapture(event.pointerId);
+    scratch(event);
+  });
+
+  canvas.addEventListener("pointermove", scratch);
+
+  canvas.addEventListener("pointerup", () => {
+    isDrawing = false;
+  });
+
+  canvas.addEventListener("pointercancel", () => {
+    isDrawing = false;
+  });
+
+  canvas.addEventListener("pointerleave", () => {
+    isDrawing = false;
+  });
+
+  drawCover();
+
+  window.addEventListener("resize", () => {
+    if (!revealed) drawCover();
+  });
+})();
+</script>
+
+</body>
+</html>
